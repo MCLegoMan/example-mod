@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "example",
+	"version": "${version}",
+	"name": "Example",
+	"description": "This is an example mod.",
+	"authors": [
+		"MCLegoMan"
+	],
+	"contributors": [
+	],
+	"contact": {
+		"homepage": "https://github.com/MCLegoMan",
+		"sources": "https://github.com/MCLegoMan/example-mod"
+	},
+	"license": "CC-BY 4.0",
+	"icon": "assets/example/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mclegoman.example.common.ExampleMain"
+		],
+		"client": [
+			"com.mclegoman.example.client.ExampleClientMain"
+		],
+		"server": [
+			"com.mclegoman.example.server.ExampleServerMain"
+		]
+	},
+	"mixins": [
+		"example.mixins.json"
+	],
+	"depends": {
+		"minecraft": "~1.9.4"
+	},
+	"suggests": {
+	},
+	"accessWidener" : "example.accesswidener"
+}
